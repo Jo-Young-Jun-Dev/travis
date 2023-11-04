@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: react-app
+    container_name: react-app
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - /app/node_modules
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: react-app-test
+    container_name: react-app-test
+    ports:
+      - 3001:3000
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: ["npm", "run", "test"]

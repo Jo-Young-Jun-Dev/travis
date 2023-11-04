@@ -1,0 +1,13 @@
+sudo: required
+
+# services that we need to run our tests
+services:
+  - docker
+
+# series of commands to run before our tests are ran
+before_install:
+  - docker build -t docker-react-test -f ./travis/exam01/Dockerfile.dev .
+
+# commands to run our test suite after the build is successful
+script:
+  - docker run -e CI=true docker-react-test npm run test
