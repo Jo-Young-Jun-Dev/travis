@@ -6,7 +6,7 @@ services:
 
 # series of commands to run before our tests are ran
 before_install:
-  - docker build -t docker-react-test -f ./travis/exam01/Dockerfile.dev .
+  - docker build -t docker-react-test -f Dockerfile.dev .
 
 # commands to run our test suite after the build is successful
 script:
