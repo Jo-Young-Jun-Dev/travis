@@ -12,6 +12,7 @@ before_install:
 script:
   - docker run -e CI=true docker-react-test npm run test
 
+# deploy our application to AWS
 # configuration to deploy our application to AWS
 deploy:
   provider: elasticbeanstalk
