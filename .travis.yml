@@ -10,7 +10,7 @@ before_install:
 
 # commands to run our test suite after the build is successful
 script:
-  - docker run -e CI=true docker-react-test npm run start
+  - docker run -e CI=true docker-react-test npm run test
 
 # configuration to deploy our application to AWS
 deploy:
