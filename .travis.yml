@@ -16,8 +16,9 @@ script:
 # configuration to deploy our application to AWS
 deploy:
   provider: elasticbeanstalk
+  # http://myppname-env.eba-nrvappfk.ap-northeast-2.elasticbeanstalk.com/
   # xxxxx.ap-northeast-2.elasticbeanstalk.com
-  region: "north-east-2"
+  region: "ap-northeast-2"
   app: "myppName"
   env: "MyppName-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-174644799367"
