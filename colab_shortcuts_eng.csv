@@ -1,0 +1,13 @@
+Shortcut,Description
+Ctrl + Enter,Execute the current selected cell.
+Shift + Enter,Execute the current cell and move to the next cell.
+Alt + Enter,Execute the current cell and insert a new code cell below.
+Ctrl + M B,Insert a new code cell below the current selected cell.
+Ctrl + M D,Delete the current selected cell.
+Ctrl + M M,Convert the current selected cell to a text cell.
+Ctrl + M Y,Convert the current selected text cell to a code cell.
+Ctrl + M X,Cut the current selected cell.
+Ctrl + M C,Copy the current selected cell.
+Ctrl + M V,Paste the copied cell below the current selected cell.
+Ctrl + F9,Execute all cells in the notebook in order.
+Ctrl + /,Toggle comment for the selected line/block in the code cell.
